@@ -7,7 +7,7 @@
 .wrapper{
     display: grid;
     height: 100vh; /* Full viewport height */
-    grid-template-rows: 16% 1fr; /* 24% for top box, remaining for bottom boxes */
+    grid-template-rows: 19% 1fr; /* 24% for top box, remaining for bottom boxes */
     grid-template-columns: 23.4% 70%;
     overflow: clip;
 }
@@ -119,4 +119,23 @@
 .contentTitle h1{
     font-size: 2rem;
 
+}
+.taskList{
+    border: 1px solid black;
+    height: 66.8vh;
+}
+.tasks{
+    display: flex;
+    border: 1px solid black;
+    height: 5vh;
+    padding: 25px;
+}
+
+.listRight{
+    display: flex;
+    border: 1px solid black;
+}
+.taskIcons{
+    height: 2rem;
+    width: 2rem;
 }
