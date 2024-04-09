@@ -4,8 +4,16 @@
     padding: 0;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: 22% 75%;
+    grid-template-rows: 14% 1fr;
+}
+
 /* HEADER */
 .header{
+    grid-row: 1;
+    grid-column: 1 / span 3;
     border-bottom: 2px solid black;
     padding: 30px;
     height: 6vh;
@@ -39,6 +47,9 @@
 /* NAV */
 
 .nav{
+    grid-row: 2; /* Placed in the second row */
+    grid-column: 1; /* Placed in the first column */
+    position: relative;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     width: 21rem;
@@ -82,3 +93,14 @@
 
 
 /* CONTENT */
+
+.content{
+    grid-row: 2; /* Placed in the second row */
+  grid-column: 2 / span 2; 
+    position: relative;
+    border: 1px solid black;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
