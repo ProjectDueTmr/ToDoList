@@ -123,12 +123,20 @@
 .taskList{
     border: 1px solid black;
     height: 66.8vh;
+    width: 100%;
 }
 .tasks{
     display: flex;
     border: 1px solid black;
+    padding: 15px 50px;
     height: 5vh;
+    width: 90%;
+}
+.listContainer{
+    display: flex;
+    justify-content: space-around;
     padding: 25px;
+    border: 1px solid black;
 }
 
 .listRight{
