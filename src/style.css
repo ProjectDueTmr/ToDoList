@@ -6,8 +6,8 @@
 
 .wrapper{
     display: grid;
-    grid-template-columns: 22% 75%;
-    grid-template-rows: 14% 1fr;
+    grid-template-columns: 23.4% 10%;
+    grid-template-rows: 13.8% 86%
 }
 
 /* HEADER */
@@ -99,7 +99,6 @@
   grid-column: 2 / span 2; 
     position: relative;
     border: 1px solid black;
-    background-color: red;
     width: 100%;
     height: 100%;
 }
