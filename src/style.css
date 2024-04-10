@@ -115,33 +115,49 @@
     padding: 7px 17px;
     width: 100%;
     margin: 10px 0;
+
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 .contentTitle h1{
     font-size: 2rem;
-
+    margin-top: 12px;
 }
 .taskList{
-    border: 1px solid black;
+    outline: 1px solid black;
+    margin-left: 10px;
     height: 66.8vh;
+    padding: 0 25px 0 0 ;
     width: 100%;
 }
 .tasks{
     display: flex;
-    border: 1px solid black;
+    outline: 1px solid blue;
+    justify-content: flex-start;
     padding: 15px 50px;
-    height: 5vh;
-    width: 90%;
+}
+.tasks ul{
+    width: 100%;
+}
+.tasks li {
+    list-style: circle;
+}
+.listLeft{
+    display: flex;
+    flex-direction: column;
 }
 .listContainer{
     display: flex;
-    justify-content: space-around;
-    padding: 25px;
-    border: 1px solid black;
+    outline: 1px solid green;
+    justify-content: space-between;
 }
 
 .listRight{
     display: flex;
-    border: 1px solid black;
+    outline: 1px solid red;
+    gap: 12px;
+    align-items: center;
 }
 .taskIcons{
     height: 2rem;
