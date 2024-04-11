@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+:root{
+    --border-color: rgb(125, 125, 125, .5);
+}
 .wrapper{
     display: grid;
     height: 100vh; /* Full viewport height */
@@ -16,19 +18,19 @@
 .header{
     grid-row: 1;
     grid-column: 1 / span 3;
-    border-bottom: 2px solid black;
-    padding: 50px;
+    border-bottom: 4px solid black;
+    align-content: center;
 }
 .banner{
     display: flex;
     justify-content:space-between;
     align-items: center;
     text-align: center;
+    padding: 0 3rem;
 }
 
 .navTitle h1{
-    font-size: 2rem;
-    margin-right: 6vw;
+    font-size: 3rem;
 }
 .toggle-button{
     display: flex;
@@ -44,20 +46,22 @@
     background-color: black;
     border-radius: 10px;
 }
-.toggleBtnDiv{
+/* .toggleBtnDiv{
     padding: 12px;
 }
 .toggleBtnDiv:hover{
     background-color: rgb(0, 175, 255, .5);
-    padding: 12px;
-}
+    border: 3px solid rgb(125, 125, 125, .5);
+    border-radius: 10px;
+    padding: 0;
+} */
 
 /* NAV */
 
 .nav{
     grid-row: 2; /* Placed in the second row */
     grid-column: 1; /* Placed in the first column */
-    border-right: 1px solid black;
+    border-right: 4px solid black;
     border-bottom: 1px solid black;
 }
 
@@ -69,7 +73,7 @@
 }
 .navbar p{
     background-color: rgb(0, 175, 255, 0.5);
-    border: 3px solid rgb(125, 125, 125, .5);
+    border: 3px solid var(--border-color);
     border-radius: 10px;
     padding: 7px 17px;
     width: 100%;
@@ -104,13 +108,11 @@
 .content{
     grid-row: 2; 
   grid-column: 2 / span 2;
-    border: 1px solid black;
     padding: 30px 60px 0;
 }
-
 .contentTitle{
     background-color: rgb(0, 175, 255, 0.5);
-    border: 3px solid rgb(125, 125, 125, .5);
+    border: 3px solid var(--border-color);
     border-radius: 10px;
     padding: 7px 17px;
     width: 100%;
@@ -125,19 +127,23 @@
     margin-top: 12px;
 }
 .taskList{
-    outline: 1px solid black;
+    border: 3px solid var(--border-color);
+    background-color: rgb(0, 175, 255, 0.5);
     margin-left: 10px;
-    height: 66.8vh;
-    padding: 0 25px 0 0 ;
+    height: 55vh;
     width: 100%;
+    padding: 13px;
+    overflow-y:scroll;
 }
 .tasks{
     display: flex;
-    outline: 1px solid blue;
-    justify-content: flex-start;
-    padding: 15px 50px;
+    /* outline: 1px solid blue; */
+    /* padding: 15px 50px; */
 }
 .tasks ul{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
 }
 .tasks li {
@@ -152,23 +158,38 @@
 }
 .listContainer{
     display: flex;
-    outline: 1px solid green;
+    background-color: white;
+    outline: 3px solid black;
     justify-content: space-between;
+}
+/* .listContainer p{
+    font-size: 1.5rem;
+} */
+.taskTitle{
+    font-size: 1.7rem;
+}
+.taskDetails{
+    font-size: 1.3rem;
 }
 .taskBorder{
     height: 7px;
-    width: 50%;
+    width: 25%;
     transform: scale(1.2, 1);
     transform: translate(1px, 0);
-    background-color: black;
+    background-color: var(--border-color);
     border-radius: 2px;
 }
 .listRight{
     display: flex;
-    outline: 1px solid red;
-    padding: 5px 0;
+    outline: 1px solid black;
+    padding: 5px 0 0 12px;
     gap: 12px;
     align-items: center;
+}
+.dueDate{
+    border: 2px solid rgb(0, 0, 0, .8);
+    border-radius: 5px;
+    padding: 3px;
 }
 .taskIcons{
     height: 2rem;
