@@ -12,4 +12,6 @@
 //expand a single todo to see more info
 //delete a todo
 
+const toggleBtn = document.getElementById('toggle-button')
+
 console.log('hey');

@@ -64,6 +64,15 @@
     border-right: 4px solid black;
     border-bottom: 1px solid black;
 }
+.hidden{
+    top: 0;
+    left: 0;
+    pointer-events: none !important;
+    position: absolute !important;
+    max-height: 0 !important;
+    transition: max-height 1s ease-out !important;
+    opacity: 0 !important;
+}
 
 .navbar{
     padding: 30px;
@@ -176,7 +185,7 @@
     width: 25%;
     transform: scale(1.2, 1);
     transform: translate(1px, 0);
-    background-color: var(--border-color);
+    background-color: rgb(0, 175, 255);
     border-radius: 2px;
 }
 .listRight{
