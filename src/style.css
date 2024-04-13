@@ -58,27 +58,22 @@
 
 /* NAV */
 
-.nav{
+.navSection{
     grid-row: 2; /* Placed in the second row */
     grid-column: 1; /* Placed in the first column */
     border-right: 4px solid black;
     border-bottom: 1px solid black;
 }
-.hidden{
-    top: 0;
-    left: 0;
-    pointer-events: none !important;
-    position: absolute !important;
-    max-height: 0 !important;
-    transition: max-height 1s ease-out !important;
-    opacity: 0 !important;
-}
 
 .navbar{
+    display: none;
     padding: 30px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 75px;
+}
+.navbar.active{
+    display: flex;
 }
 .navbar p{
     background-color: rgb(0, 175, 255, 0.5);
