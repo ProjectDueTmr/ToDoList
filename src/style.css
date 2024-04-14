@@ -68,7 +68,7 @@
 .navbar{
     display: none;
     padding: 30px;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     gap: 75px;
 }
