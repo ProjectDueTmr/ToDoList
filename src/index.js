@@ -13,7 +13,7 @@
 //delete a todo
 
 const toggleBtn = document.getElementsByClassName('toggleBtnDiv')[0]
-const nav = document.getElementsByClassName('navbar')[0];
+const nav = document.getElementsByClassName('navSection')[0];
 
 toggleBtn.addEventListener('click', () => {
     nav.classList.toggle('active')
