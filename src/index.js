@@ -12,10 +12,10 @@
 //expand a single todo to see more info
 //delete a todo
 
-const toggleBtn = document.getElementsByClassName('toggleBtnDiv')[0]
-const nav = document.getElementsByClassName('navSection')[0];
+const toggleBtn = document.getElementsByClassName('toggle-button')[0];
+const nav = document.getElementsByClassName('projects')[0];
 
 toggleBtn.addEventListener('click', () => {
+    nav.classList.add('active')
     nav.classList.toggle('active')
-})
-console.log('hey');
+});
