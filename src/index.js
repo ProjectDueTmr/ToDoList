@@ -11,7 +11,7 @@
 //view all todos inside projects;
 //expand a single todo to see more info
 //delete a todo
-
+import  { addProjects } from "./projects";
 const toggle = document.getElementsByClassName('toggle-button')[0];
 const projects = document.getElementsByClassName('projects')[0];
 toggle.addEventListener('click', () => {
