@@ -12,17 +12,8 @@
 //expand a single todo to see more info
 //delete a todo
 
-// const toggle = document.getElementsByClassName('toggle-button')[0];
-// const projects = document.getElementsByClassName('projects')[0];
-// toggle.addEventListener('click', () => {
-//     projects.classList.toggle("active")
-// });
-
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.querySelector('.toggle-button');
-    const nav = document.querySelector('.projects');
-
-    toggleBtn.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
+const toggle = document.getElementsByClassName('toggle-button')[0];
+const projects = document.getElementsByClassName('projects')[0];
+toggle.addEventListener('click', () => {
+    projects.classList.toggle("active")
 });

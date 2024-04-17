@@ -33,7 +33,7 @@
     font-size: 3rem;
 }
 .toggle-button{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -73,9 +73,7 @@
     flex-direction: column;
     gap: 75px;
 }
-.navSection.active{
-    display: grid;
-}
+
 .navbar p{
     background-color: rgb(0, 175, 255, 0.5);
     border: 3px solid var(--border-color);
@@ -95,11 +93,6 @@
     transform: scale(1.2, 1);
     background-color: black;
     border-radius: 10px;
-}
-.projects{
-}
-.projects.active{
-    display: none;
 }
 .navWrapper{
     padding: 10px 30px 0;
@@ -204,4 +197,8 @@
 .taskIcons{
     height: 2rem;
     width: 2rem;
+}
+
+.active{
+    display: none;
 }
