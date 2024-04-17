@@ -38,6 +38,7 @@
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    cursor: pointer;
 }
 
 .toggle-button .bar{
@@ -96,11 +97,9 @@
     border-radius: 10px;
 }
 .projects{
-    display: none;
 }
 .projects.active{
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 .navWrapper{
     padding: 10px 30px 0;
