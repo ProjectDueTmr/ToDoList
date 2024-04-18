@@ -11,9 +11,16 @@
 //view all todos inside projects;
 //expand a single todo to see more info
 //delete a todo
-import  { addProjects } from "./projects";
+
 const toggle = document.getElementsByClassName('toggle-button')[0];
-const projects = document.getElementsByClassName('projects')[0];
+const projects = document.getElementsByClassName('navSection')[0];
+const content = document.querySelector('.content');
 toggle.addEventListener('click', () => {
     projects.classList.toggle("active")
+    content.classList.toggle("fullScreen")
 });
+
+
+console.log('hey')
+
+

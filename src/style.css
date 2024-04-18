@@ -33,7 +33,7 @@
     font-size: 3rem;
 }
 .toggle-button{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -66,7 +66,10 @@
     border-right: 4px solid black;
     border-bottom: 1px solid black;
 }
-
+.active{
+    display: none;
+    position: absolute !important;
+}
 .navbar{
     padding: 30px;
     display: flex;
@@ -104,7 +107,11 @@
   text-align: center;
   text-decoration: none;
 }
-
+.addProjectInfo{
+    background-color: red;
+    width: 150px;
+    height: 100px; 
+}
 
 /* CONTENT */
 
@@ -112,6 +119,9 @@
     grid-row: 2; 
   grid-column: 2 / span 2;
     padding: 30px 60px 0;
+}
+.fullScreen{
+    transform: translate(-11vw, 0vw);
 }
 .contentTitle{
     background-color: rgb(0, 175, 255, 0.5);
@@ -199,6 +209,3 @@
     width: 2rem;
 }
 
-.active{
-    display: none;
-}
